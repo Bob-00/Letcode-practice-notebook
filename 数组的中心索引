@@ -1,2 +1,33 @@
 我的解答：
-标准答案：
+主要的思想是用数组的总和除以2，得到均值，再进行左边数组元素的累加，累加值和均值对比，得到中心索引。
+这种的错误主要是当中心索引值有两个或两个以上的时候，就不适用了；
+
+正确的解法是：leftsum *2 + 中心索引=total sum;
+
+我写的程序:
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) 
+    {
+    int i=0;
+    int sum=0;
+            if（i<=10000)
+            {sum=int[0]+int[i];}
+            else  
+        {return0;}
+
+
+        if(num[i]<(sum/2))
+        {
+           num[i]=num[i]+1;
+        }
+        else
+        {
+            cout<<num[i]<<endl;
+        }
+       
+    }
+};
+
+
+标准答案：见力扣中的详细解答。
